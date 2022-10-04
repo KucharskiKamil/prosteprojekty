@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="koniec"></h2>
+    <button id="przycisk" style="visibility: hidden;" onclick="przenies()">Zagraj jeszcze raz!</button> 
+    <table id="plansza">
+        <tr id="row_0">
+            <td class="cell_A" id="c00" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c01" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c02" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c03" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c04" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c05" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c06" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c07" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+        </tr>
+        <tr id="row_1">
+            <td class="cell_B" id="c10" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c11" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c12" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c13" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c14" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c15" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c16" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c17" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+        </tr>
+        <tr id="row_2">
+            <td class="cell_A" id="c20" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c21" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c22" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c23" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c24" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c25" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c26" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c27" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+        </tr>
+        <tr id="row_3">
+            <td class="cell_B" id="c30" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c31" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c32" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c33" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c34" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c35" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c36" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c37" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+        </tr>
+        <tr id="row_4">
+            <td class="cell_A" id="c40" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c41" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c42" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c43" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c44" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c45" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c46" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c47" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+        </tr>
+        <tr id="row_5">
+            <td class="cell_B" id="c50" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c51" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c52" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c53" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c54" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c55" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c56" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c57" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+        </tr>
+        <tr id="row_6">
+            <td class="cell_A" id="c60" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c61" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c62" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c63" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c64" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c65" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c66" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c67" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+        </tr>
+        <tr id="row_7">
+            <td class="cell_B" id="c70" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c71" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c72" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c73" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c74" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c75" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_B" id="c76" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+            <td class="cell_A" id="c77" ondragover="allowDrop(event)" ondrop="dropp(event)"></td>
+        </tr>
+    </table>
+    <script src="myscripts.js"></script>
+</body>
+</html>

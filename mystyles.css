@@ -1,0 +1,29 @@
+#plansza
+{
+    border-collapse: collapse;
+}
+.cell_A,.cell_B
+{
+    border: 1px solid black;
+    margin: 0px;
+    padding:0px;
+    width:100px;
+    height:100px;
+}
+.cell_A
+{
+    background-color: #CC9966;
+}
+.cell_B
+{
+    background-color: #f7e1cb;
+}
+.pionek_c,.pionek_b,.damaczar,.damabial
+{
+    display:block;
+    padding:10px;
+    width:80px;
+    height:80px;
+}
+
+
